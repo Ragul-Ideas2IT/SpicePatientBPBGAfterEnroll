@@ -220,16 +220,16 @@ public class Main {
                         break;
 
                     case "county":
-                        patientCSV[fields.indexOf(field)] =
-                                database.getCollection(field).find(Filters.and(Filters.eq("_id", new ObjectId(patient.get(
-                                        field).toString())))).first().get("name").toString();
+                        patientCSV[fields.indexOf(field)] ="";
+//                                database.getCollection(field).find(Filters.and(Filters.eq("_id", new ObjectId(patient.get(
+//                                        field).toString())))).first().get("name").toString();
                         break;
 
                     case "sub_county":
-                        patientCSV[fields.indexOf(field)] =
-                                database.getCollection("subcounty").find(Filters.and(Filters.eq("_id",
-                                        new ObjectId(patient.get(
-                                field).toString())))).first().get("name").toString();
+                        patientCSV[fields.indexOf(field)] ="";
+//                                database.getCollection("subcounty").find(Filters.and(Filters.eq("_id",
+//                                        new ObjectId(patient.get(
+//                                field).toString())))).first().get("name").toString();
                         break;
 
                     case "tobacco_status":
